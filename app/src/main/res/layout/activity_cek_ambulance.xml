@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".pelaksana.ambulance.CekAmbulanceActivity">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_top" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Cek Ambulance"
+                android:gravity="center"
+                android:id="@+id/judul"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:textColor="@color/primary_31"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+                <!--                shift-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shift"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtshift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shift"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--                tgl pemeriksaan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tanggal Pemeriksaan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txttgl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shift"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                tabung-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tabung Oksigen"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edttabungoksigen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--                tekanan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tekanan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edttekananoksigen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                apar-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="APAR"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edttapar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--                tekanan apar-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tekanan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edttekananapar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--                kondisi fisik-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kondisi Fisik"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edtfisikapar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                infus-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cairan Infus"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edtcairan_infus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                perlak alas-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Perlak Alas"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edtperlak_alas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                tandu dorong-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tandu Dorong (Brangkar)"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edttandu_dorong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--                kebersihan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kebersihan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edtkebersihan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--                roda-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Roda"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edtroda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--                spons kasur-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Spons Kasur"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edtspons_kasur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tandu Lipat"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/edttandu_lipat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                air wastafel-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Air Wastafel"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/air_wastafel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Anti Septic Gel"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/anti_septic_gel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                tisu kering-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tisu Kering"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/tisu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                oxycan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Oxycan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/oxycan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                tas p3k-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tas P3K"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:inputType="textPersonName"
+                        android:id="@+id/tas_p3k"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                keterangan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Keterangan"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/txtketerangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:background="@drawable/bg_edt_text_border"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--btn-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="24dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Draft"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:id="@+id/btn_draft"
+                        android:paddingVertical="16dp"
+                        app:backgroundTint="@color/primary_94"
+                        app:cornerRadius="100dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="4dp"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Submit"
+                        android:layout_marginStart="11dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/bw_100"
+                        android:id="@+id/btn_submit"
+                        android:paddingVertical="16dp"
+                        app:backgroundTint="@color/primary_71"
+                        app:cornerRadius="100dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</layout>

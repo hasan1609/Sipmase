@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hydrant_navigation_menu"
+    app:startDestination="@id/itemHydrantFragment">
+
+
+    <fragment
+        android:id="@+id/itemHydrantFragment"
+        android:name="com.sipmase.sipmase.admin.hydrant.fragment.ItemHydrantFragment"
+        android:label="fragment_item_hydrant"
+        tools:layout="@layout/fragment_item_hydrant" />
+    <fragment
+        android:id="@+id/scheduleHydrantFragment"
+        android:name="com.sipmase.sipmase.admin.hydrant.fragment.ScheduleHydrantFragment"
+        android:label="fragment_schedule_hydrant"
+        tools:layout="@layout/fragment_schedule_hydrant" />
+    <fragment
+        android:id="@+id/hasilHydrantFragment"
+        android:name="com.sipmase.sipmase.admin.hydrant.fragment.HasilHydrantFragment"
+        android:label="fragment_hasil_hydrant"
+        tools:layout="@layout/fragment_hasil_hydrant" />
+</navigation>

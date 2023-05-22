@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pencahayaan_navigation_menu"
+    app:startDestination="@id/itemPencahayaanFragment">
+
+    <fragment
+        android:id="@+id/itemPencahayaanFragment"
+        android:name="com.sipmase.sipmase.admin.pencahayaan.fragment.ItemPencahayaanFragment"
+        android:label="fragment_item_pencahayaan"
+        tools:layout="@layout/fragment_item_pencahayaan" />
+    <fragment
+        android:id="@+id/schedulePencahayaanFragment"
+        android:name="com.sipmase.sipmase.admin.pencahayaan.fragment.SchedulePencahayaanFragment"
+        android:label="fragment_schedule_pencahayaan"
+        tools:layout="@layout/fragment_schedule_pencahayaan" />
+    <fragment
+        android:id="@+id/hasilPencahayaanFragment"
+        android:name="com.sipmase.sipmase.admin.pencahayaan.fragment.HasilPencahayaanFragment"
+        android:label="fragment_hasil_pencahayaan"
+        tools:layout="@layout/fragment_hasil_pencahayaan" />
+</navigation>

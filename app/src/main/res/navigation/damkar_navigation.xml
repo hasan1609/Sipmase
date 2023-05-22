@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/damkar_navigation"
+    app:startDestination="@id/scheduleDamkarFragment">
+
+    <fragment
+        android:id="@+id/scheduleDamkarFragment"
+        android:name="com.sipmase.sipmase.admin.damkar.fragment.ScheduleDamkarFragment"
+        android:label="fragment_schedule_damkar"
+        tools:layout="@layout/fragment_schedule_damkar" />
+    <fragment
+        android:id="@+id/hasilDamkarFragment"
+        android:name="com.sipmase.sipmase.admin.damkar.fragment.HasilDamkarFragment"
+        android:label="fragment_hasil_damkar"
+        tools:layout="@layout/fragment_hasil_damkar" />
+</navigation>

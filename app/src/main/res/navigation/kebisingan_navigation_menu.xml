@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kebisingan_navigation_menu"
+    app:startDestination="@id/itemKebisinganFragment">
+
+    <fragment
+        android:id="@+id/itemKebisinganFragment"
+        android:name="com.sipmase.sipmase.admin.kebisingan.fragment.ItemKebisinganFragment"
+        android:label="fragment_item_kebisingan"
+        tools:layout="@layout/fragment_item_kebisingan" />
+    <fragment
+        android:id="@+id/scheduleKebisinganFragment"
+        android:name="com.sipmase.sipmase.admin.kebisingan.fragment.ScheduleKebisinganFragment"
+        android:label="fragment_schedule_kebisingan"
+        tools:layout="@layout/fragment_schedule_kebisingan" />
+    <fragment
+        android:id="@+id/hasilKebisinganFragment"
+        android:name="com.sipmase.sipmase.admin.kebisingan.fragment.HasilKebisinganFragment"
+        android:label="fragment_hasil_kebisingan"
+        tools:layout="@layout/fragment_hasil_kebisingan" />
+
+</navigation>

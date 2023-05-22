@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/gradient_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:text="Export Data"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_89"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:text="Nama"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary_89"/>
+
+                <EditText
+                    android:id="@+id/edt_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/primary_10"
+                    android:textSize="16sp"
+                    android:inputType="textPersonName"
+                    android:gravity="start|center"
+                    android:paddingStart="25dp"
+                    android:background="@drawable/bg_edittext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:text="Jabatan"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary_89"/>
+
+                <EditText
+                    android:id="@+id/edt_jabatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/primary_10"
+                    android:textSize="16sp"
+                    android:inputType="textPersonName"
+                    android:gravity="start|center"
+                    android:paddingStart="25dp"
+                    android:background="@drawable/bg_edittext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:text="Tanda Tangan"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary_89"/>
+
+                <com.github.gcacace.signaturepad.views.SignaturePad
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/signature_pad"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="22dp"                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:penColor="@color/bw_10" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:text="Export"
+                    android:id="@+id/btnsubmit"
+                    android:textSize="14sp"
+                    android:padding="16dp"
+                    android:backgroundTint="@color/bw_100"
+                    android:layout_marginVertical="32dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_31"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_apar"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/title_schedule" />
+
+    <item
+        android:id="@+id/navigation_kadaluarsa"
+        android:icon="@drawable/ic_kadaluarsa"
+        android:title="@string/title_kadaluarsa" />
+
+</menu>

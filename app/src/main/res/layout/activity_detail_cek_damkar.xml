@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".admin.damkar.activity.DetailCekDamkarActivity">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_top" />
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Detail Cek Mobil Damkar"
+                android:textColor="@color/primary_31"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+                <!--                shift-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shift"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtshift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shift"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--                tgl pemeriksaan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tanggal Pemeriksaan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txttgl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shift"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Start"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/star"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                stop-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stop"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/stop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                air accu-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Air Accu"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/airaccu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                level air radiator-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Level Air Radiator"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lvl_air_radiator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                temperature mesin-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Temperature Mesin"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/temp_mesin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                level oil-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Level Oil"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lvl_oil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                filter solar-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Filter Solar"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/filter_solar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                levl minyak rem-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Level Minyak Rem"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lvl_minyak_rem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                suara mesin-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Suara Mesin"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/suara_mesin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                lampu depan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Depan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lampu_depan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                lampu belakang-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Belakang"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lampu_belakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                lampu rem-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Rem"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lampu_rem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                kanan depn-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Sein Kanan Depan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kanan_dpn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                kiri depan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Sein Kiri Depan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kiri_depan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                kanan belakang-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Sein Kanan Belakang"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kanan_belakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                kiri belakang-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Sein Kiri Belakang"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kiri_belakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                hazard-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Hazard"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hazard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                sorot-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Sorot"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/sorot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                dalam depan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Dalam Depan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/dalam_depan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                dalam tengan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Dalam Tengah"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/dalam_tengah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                dalam_belakang-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lampu Dalam Belakang"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/dalam_belakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                wiper-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Wiper"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/wiper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                Spion-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Spion"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/spion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+<!--                sirine-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sirine"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/sirine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/bw_70" />
+                <!--                keterangan-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Keterangan"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtketerangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!--btn-->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Export"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary_31"
+                    android:id="@+id/btn_export"
+                    android:visibility="gone"
+                    android:layout_marginVertical="24dp"
+                    android:paddingVertical="16dp"
+                    app:backgroundTint="@color/primary_94"
+                    app:cornerRadius="100dp"
+                    android:layout_marginEnd="11dp" />
+                <LinearLayout
+                    android:id="@+id/ly_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginVertical="24dp"
+                    android:orientation="horizontal">
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Tolak"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_31"
+                        android:id="@+id/btn_tolak"
+                        android:layout_marginTop="20dp"
+                        android:paddingVertical="16dp"
+                        app:backgroundTint="@color/primary_94"
+                        app:cornerRadius="100dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="4dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Terima"
+                        android:layout_marginStart="11dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/bw_100"
+                        android:id="@+id/btn_terima"
+                        android:layout_marginTop="20dp"
+                        android:paddingVertical="16dp"
+                        app:backgroundTint="@color/primary_71"
+                        app:cornerRadius="100dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</layout>

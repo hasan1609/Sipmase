@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/apar_navigation_menu"
+    app:startDestination="@id/itemAparActivity">
+
+    <fragment
+        android:id="@+id/itemAparActivity"
+        android:name="com.sipmase.sipmase.admin.apar.fragment.ItemAparFragment"
+        android:label="fragment_item_apar_activity"
+        tools:layout="@layout/fragment_item_apar" />
+    <fragment
+        android:id="@+id/scheduleAparActivity"
+        android:name="com.sipmase.sipmase.admin.apar.fragment.ScheduleAparFragment"
+        android:label="fragment_schedule_apar_activity"
+        tools:layout="@layout/fragment_schedule_apar" />
+    <fragment
+        android:id="@+id/hasilAparFragment"
+        android:name="com.sipmase.sipmase.admin.apar.fragment.HasilAparFragment"
+        android:label="fragment_hasil_apar"
+        tools:layout="@layout/fragment_hasil_apar" />
+
+</navigation>

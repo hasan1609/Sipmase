@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ambulance_navigation"
+    app:startDestination="@id/scheduleAmbulanceFragment">
+
+    <fragment
+        android:id="@+id/scheduleAmbulanceFragment"
+        android:name="com.sipmase.sipmase.admin.ambulance.fragment.ScheduleAmbulanceFragment"
+        android:label="fragment_schedule_ambulance"
+        tools:layout="@layout/fragment_schedule_ambulance" />
+    <fragment
+        android:id="@+id/hasilAmbulanceFragment"
+        android:name="com.sipmase.sipmase.admin.ambulance.fragment.HasilAmbulanceFragment"
+        android:label="fragment_hasil_ambulance"
+        tools:layout="@layout/fragment_hasil_ambulance" />
+</navigation>

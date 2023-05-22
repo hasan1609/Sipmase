@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".admin.kebisinngan.fragment.ItemKebisinganFragment">
+
+        <SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/bg_edt_text_shadow"
+            android:padding="12dp"
+            android:searchIcon="@drawable/ic_search"
+            android:showDividers="none" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvitemkebisingan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@+id/search_bar"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/primary_60"
+            android:src="@drawable/ic_plus_ui"
+            android:id="@+id/btn_tambah_item_kebisinngan"
+            android:layout_margin="17dp"/>
+
+    </RelativeLayout>
+</layout>

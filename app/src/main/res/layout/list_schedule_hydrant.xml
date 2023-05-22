@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_marginBottom="17dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="98092193"
+            android:textSize="14dp"
+            android:textColor="@color/bw_100"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:id="@+id/txtkode"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Box"
+                android:textSize="15dp"
+                android:textColor="@color/bw_20"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No BAk :"
+                android:textSize="15dp"
+                android:textColor="@color/bw_20"
+                android:textStyle="bold"
+                android:id="@+id/txtnobox"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Penempatan"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:textColor="@color/bw_20"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Penempatan :"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:textColor="@color/bw_20"
+                android:textStyle="bold"
+                android:id="@+id/txtlokasi"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Pengecekan"
+                android:textSize="15dp"
+                android:textColor="@color/bw_20"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Pengecekan :"
+                android:textSize="15dp"
+                android:textColor="@color/bw_20"
+                android:textStyle="bold"
+                android:id="@+id/txttgl_cek"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="15dp"
+                android:textColor="@color/bw_20"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="15dp"
+                android:textColor="@color/bw_20"
+                android:textStyle="bold"
+                android:id="@+id/txtstatus"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

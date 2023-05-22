@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/apat_navigation_menu"
+    app:startDestination="@id/itemApatFragment">
+
+    <fragment
+        android:id="@+id/scheduleApatFragment"
+        android:name="com.sipmase.sipmase.admin.apat.fragment.ScheduleApatFragment"
+        android:label="fragment_schedule_apat"
+        tools:layout="@layout/fragment_schedule_apat" />
+    <fragment
+        android:id="@+id/itemApatFragment"
+        android:name="com.sipmase.sipmase.admin.apat.fragment.ItemApatFragment"
+        android:label="fragment_item_apat"
+        tools:layout="@layout/fragment_item_apat" />
+    <fragment
+        android:id="@+id/hasilApatFragment"
+        android:name="com.sipmase.sipmase.admin.apat.fragment.HasilApatFragment"
+        android:label="fragment_hasil_apat"
+        tools:layout="@layout/fragment_hasil_apat" />
+</navigation>

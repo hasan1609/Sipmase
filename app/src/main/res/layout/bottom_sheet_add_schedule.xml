@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/gradient_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:text="Schedule"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_89"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:text="Triwulan"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary_89"/>
+                <RadioGroup
+                    android:id="@+id/rbtw"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingHorizontal="5dp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rbtw1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@drawable/null_radio_button"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selected"/>
+                    <RadioButton
+                        android:id="@+id/rbtw2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="II"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@drawable/null_radio_button"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selected"/>
+                    <RadioButton
+                        android:id="@+id/rbtw3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="III"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@drawable/null_radio_button"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selected"/>
+                    <RadioButton
+                        android:id="@+id/rbtw4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IV"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@drawable/null_radio_button"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selected"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:text="Tahun"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary_89"/>
+
+                <EditText
+                    android:id="@+id/edt_tahun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/primary_10"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:gravity="start|center"
+                    android:paddingStart="25dp"
+                    android:background="@drawable/bg_edittext" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:text="Pilih Hari"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary_89"/>
+
+                <Spinner
+                    android:id="@+id/spnhari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:gravity="start|center"
+                    android:paddingStart="25dp"
+                    android:entries="@array/hari"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/primary_10"
+                    android:background="@drawable/bg_edittext" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:text="Tambah"
+                    android:id="@+id/btnsubmit"
+                    android:textSize="14sp"
+                    android:padding="16dp"
+                    android:backgroundTint="@color/bw_100"
+                    android:layout_marginVertical="32dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_31"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</layout>

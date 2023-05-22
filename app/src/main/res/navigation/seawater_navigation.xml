@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seawater_navigation"
+    app:startDestination="@id/scheduleFragment">
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.sipmase.sipmase.admin.seawater.fragment.ScheduleFragment"
+        android:label="fragment_schedule_seawater"
+        tools:layout="@layout/fragment_schedule_seawater" />
+    <fragment
+        android:id="@+id/hasilFragment"
+        android:name="com.sipmase.sipmase.admin.seawater.fragment.HasilFragment"
+        android:label="fragment_hasil_seawater"
+        tools:layout="@layout/fragment_hasil_seawater" />
+</navigation>

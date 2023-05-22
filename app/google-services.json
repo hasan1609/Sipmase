@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "889671279630",
+    "project_id": "sipmase-fae49",
+    "storage_bucket": "sipmase-fae49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889671279630:android:6638dd5e9ba4923309085f",
+        "android_client_info": {
+          "package_name": "com.sipmase.sipmase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889671279630-v4c8iocd9heag3ndtjtfhjal6usmu4pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmpGgzexKP8AaF4q2b2XAB3RIB4GptZnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889671279630-v4c8iocd9heag3ndtjtfhjal6usmu4pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

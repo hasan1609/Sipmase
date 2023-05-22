@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp"
+        tools:context=".admin.apar.fragment.BottomSheetAddItemAparFragment">
+
+    <LinearLayout
+        android:background="@drawable/gradient_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="APAR"
+            android:textSize="16sp"
+            android:textColor="@color/primary_89"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="22dp"
+            android:text="Kode APAR"
+            android:textSize="12sp"
+            android:textColor="@color/primary_89"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="25dp">
+            <TextView
+                android:id="@+id/txtkodeapar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edittext"
+                android:textColor="@color/primary_10"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:paddingStart="25dp"/>
+            <ImageView
+                android:id="@+id/scnqr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_scan"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="22dp"
+            android:text="Jenis APAR"
+            android:textSize="12sp"
+            android:textColor="@color/primary_89"/>
+        <Spinner
+            android:id="@+id/spnjenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:gravity="start|center"
+            android:paddingStart="25dp"
+            android:entries="@array/jenisapar"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/primary_10"
+            android:background="@drawable/bg_edittext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="22dp"
+            android:text="Lokasi Penempatan"
+            android:textSize="12sp"
+            android:textColor="@color/primary_89"/>
+        <EditText
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/edtlokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="25dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/primary_10"
+            android:background="@drawable/bg_edittext" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="22dp"
+            android:text="Tanggal Pengisian"
+            android:textSize="12sp"
+            android:textColor="@color/primary_89"/>
+        <TextView
+            android:id="@+id/tglpengisian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/primary_10"
+            android:textSize="16sp"
+            android:gravity="start|center"
+            android:paddingStart="25dp"
+            android:background="@drawable/bg_edittext" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:text="Tambah"
+            android:id="@+id/btnsubmit"
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:backgroundTint="@color/bw_100"
+            android:layout_marginVertical="32dp"
+            android:layout_marginHorizontal="22dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_31"
+            app:cornerRadius="20dp" />
+        <LinearLayout
+            android:id="@+id/lybtn"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="32dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:text="Simpan Perubahan"
+                android:id="@+id/btnedit"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:padding="16dp"
+                android:backgroundTint="@color/bw_100"
+                android:layout_marginHorizontal="22dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_31"
+                app:cornerRadius="20dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:text="Hapus Data"
+                android:id="@+id/btnhapus"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:padding="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="22dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary_60"
+                android:textColor="@color/primary_97"
+                app:cornerRadius="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>

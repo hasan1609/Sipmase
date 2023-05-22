@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edgblok3_navigation"
+    app:startDestination="@id/scheduleEdgBlok3Fragment">
+
+    <fragment
+        android:id="@+id/scheduleEdgBlok3Fragment"
+        android:name="com.sipmase.sipmase.admin.edgblok3.fragment.ScheduleEdgBlok3Fragment"
+        android:label="fragment_schedule_edg_blok3"
+        tools:layout="@layout/fragment_schedule_edg_blok3" />
+    <fragment
+        android:id="@+id/hasilEdgBlok3Fragment"
+        android:name="com.sipmase.sipmase.admin.edgblok3.fragment.HasilEdgBlok3Fragment"
+        android:label="fragment_hasil_edg_blok3"
+        tools:layout="@layout/fragment_hasil_edg_blok3" />
+</navigation>

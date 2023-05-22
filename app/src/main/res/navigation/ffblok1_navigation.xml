@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ffblok1_navigation"
+    app:startDestination="@id/scheduleFfBlok1Fragment">
+
+    <fragment
+        android:id="@+id/scheduleFfBlok1Fragment"
+        android:name="com.sipmase.sipmase.admin.ffblok1.fragment.ScheduleFfBlok1Fragment"
+        android:label="fragment_schedule_ff_blok1"
+        tools:layout="@layout/fragment_schedule_ff_blok1" />
+    <fragment
+        android:id="@+id/hasilFfBlok1Fragment"
+        android:name="com.sipmase.sipmase.admin.ffblok1.fragment.HasilFfBlok1Fragment"
+        android:label="fragment_hasil_ff_blok1"
+        tools:layout="@layout/fragment_hasil_ff_blok1" />
+</navigation>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sipmase.sipmase">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sipmase"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".pelaksana.seawater.CekSeaWaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.ffblok2.CekFfBlok2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.ffblok1.CekFfBlok1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.edgblok3.CekEdgBlok3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.edgblok1.CekEdgBlok1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.edgblok2.CekEdgBlok2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.seawater.ScheduleSeaWaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.ffblok1.ScheduleFfBlok1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.ffblok2.ScheduleFfBlok2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.edgblok3.ScheduleEdgBlok3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.edgblok2.ScheduleEdgBlok2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.edgblok1.ScheduleEdgBlok1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.damkar.ScheduleDamkarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.ambulance.ScheduleAmbulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.damkar.CekDamkarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.ambulance.CekAmbulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.apar.QrCoderCekAparKadaluarsaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.apar.CekAparKadaluarsaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.pencahyaan.QrCodeCekPencahayaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.kebisingan.QrCodeCekKebisinganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.hydrant.QrCodeCekHydrantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.apat.QrCodeCekApatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.apar.QrCoderCekAparActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.pencahyaan.SchedulePencahayaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.kebisingan.ScheduleKebisinganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.hydrant.ScheduleHydrantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.apat.ScheduleApatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.pencahyaan.CekPencahayaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.kebisingan.CekKebisinganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.hydrant.CekhydrantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.apat.CekApatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.apar.CekAparActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.apar.AparPelaksanaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ffblok2.activity.DetailCekFfBlok2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ffblok2.FfBlok2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ffblok1.activity.DetailCekFfBlok1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ffblok1.FfBlok1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.edgblok3.activity.DetailCekEdgBlok3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.edgblok3.EdgBlok3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.edgblok2.activity.DetailCekEdgBlok2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.edgblok2.EdgBlok2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.edgblok1.activity.DetailCekEdgblok1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.edgblok1.EdgBlok1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.damkar.activity.DetailCekDamkarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.damkar.DamkarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ambulance.activity.DetailCekAmbulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ambulance.AmbulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.seawater.activity.DetailCekSeaWaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.seawater.SeawaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.pencahayaan.activity.DetailCekPencahayaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.kebisingan.activity.DetailCekKebisinganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.hydrant.activity.DetailCekHydrantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.apat.activity.DetailCekApatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.apar.activity.DetailCekAparActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.pelaksana.AddPelaksanaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.pelaksana.PelaksanaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.pencahayaan.PencahayaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.kebisingan.KebisinganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.hydrant.HydrantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.apat.ApatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.apar.AparActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRcodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.sipmase.sipmase.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
