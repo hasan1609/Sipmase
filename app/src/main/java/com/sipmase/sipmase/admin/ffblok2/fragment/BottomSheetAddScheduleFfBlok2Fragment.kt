@@ -72,6 +72,7 @@ class BottomSheetAddScheduleFfBlok2Fragment : BottomSheetDialogFragment(), AnkoL
                                 dismiss()
                             } else {
                                 loading(false)
+                                info(response)
                                 toast("Tambah schedule gagal")
                             }
                         } catch (e: Exception) {

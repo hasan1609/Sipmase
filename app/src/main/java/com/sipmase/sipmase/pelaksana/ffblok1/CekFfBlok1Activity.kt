@@ -50,8 +50,6 @@ class CekFfBlok1Activity : AppCompatActivity(), AnkoLogger {
         var cekffblok1: FFBlokModel? = null
     }
 
-    var currentDate: String? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cek_ff_blok1)
@@ -65,9 +63,7 @@ class CekFfBlok1Activity : AppCompatActivity(), AnkoLogger {
                 FFBlokModel::class.java
             )
 
-        val sdf = SimpleDateFormat("yyyy-M-dd")
-        currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekffblok1!!.tanggalCek
 
         binding.namak3.text = cekffblok1!!.k3Nama
         binding.namaoperator.text = cekffblok1!!.operatorNama
@@ -230,12 +226,9 @@ class CekFfBlok1Activity : AppCompatActivity(), AnkoLogger {
                 "${cekffblok1!!.id}"
             )
 
-            val sdf = SimpleDateFormat("yyyy-M-dd ")
-            val tanggal_cek = sdf.format(Date())
-
             val body_tanggal_cek: RequestBody = RequestBody.create(
                 MediaType.parse("text/plain"),
-                "${tanggal_cek}"
+                "${cekffblok1!!.tanggalCek}"
             )
             //=================Service Pump===================
             //waktu pencatatan
@@ -619,12 +612,9 @@ class CekFfBlok1Activity : AppCompatActivity(), AnkoLogger {
                 "${cekffblok1!!.id}"
             )
 
-            val sdf = SimpleDateFormat("yyyy-M-dd ")
-            val tanggal_cek = sdf.format(Date())
-
             val body_tanggal_cek: RequestBody = RequestBody.create(
                 MediaType.parse("text/plain"),
-                "${tanggal_cek}"
+                "${cekffblok1!!.tanggalCek}"
             )
             //=================Service Pump===================
             //waktu pencatatan

@@ -34,7 +34,6 @@ class CekAparActivity : AppCompatActivity(), AnkoLogger {
     companion object {
         var cekapar: ScheduleAparPelaksanaModel? = null
     }
-    var currentDate: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cek_apar)
@@ -45,8 +44,7 @@ class CekAparActivity : AppCompatActivity(), AnkoLogger {
             gson.fromJson(intent.getStringExtra("cekapar"), ScheduleAparPelaksanaModel::class.java)
 
         val sdf = SimpleDateFormat("yyyy-M-dd")
-        currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekapar!!.tanggalCek
         sessionManager = SessionManager(this)
         progressDialog = ProgressDialog(this)
         binding.txtshift.text = sessionManager.getNama()
@@ -139,7 +137,7 @@ class CekAparActivity : AppCompatActivity(), AnkoLogger {
                     spntuas.toString(),
                     spnrambusegitiga.toString(),
                     spngantungan.toString(),
-                    currentDate,
+                    cekapar!!.tanggalCek,
                     sessionManager.getNama(),
                     cekapar!!.tanggalCek,
                     spnpressure.toString(),
@@ -208,7 +206,7 @@ class CekAparActivity : AppCompatActivity(), AnkoLogger {
                         spntuas.toString(),
                         spnrambusegitiga.toString(),
                         spngantungan.toString(),
-                        currentDate,
+                        cekapar!!.tanggalCek,
                         sessionManager.getNama(),
                         cekapar!!.tanggalCek,
                         spnpressure.toString(),

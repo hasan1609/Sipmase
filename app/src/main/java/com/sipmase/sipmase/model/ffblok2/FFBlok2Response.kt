@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 class FFBlok2Response {
     @field:SerializedName("data")
-    val data: List<FFBlok2Model>? = null
+    val data: List<FFBlok2NewModel>? = null
 
     @field:SerializedName("message")
     val message: String? = null

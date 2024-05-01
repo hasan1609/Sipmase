@@ -185,128 +185,6 @@
                             android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
-                <!--                jp sution press-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="2. Suction Press"
-                        android:textColor="@color/primary_31"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Perform"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="0,5"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Satuan"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Kg/Cm²"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sebelum Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/jpspsb"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sesudah Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/jpspss"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-                </LinearLayout>
                 <!--                jp Discharge press-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -317,7 +195,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3. Discharge Press"
+                        android:text="2. Discharge Press"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -342,7 +220,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="12,5"
+                            android:text="-"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -367,7 +245,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="Kg/Cm²"
+                            android:text="bar"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -439,7 +317,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="4. Auto Start"
+                        android:text="3. Auto Start"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -464,7 +342,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="x"
+                            android:text="8"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -559,7 +437,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="5. Auto Stop"
+                        android:text="4. Auto Stop"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -584,7 +462,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="11"
+                            android:text="9"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -765,128 +643,6 @@
                             android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
-                <!--                md sution press-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="2. Suction Press"
-                        android:textColor="@color/primary_31"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Perform"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="13,7"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Satuan"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Kg/Cm²"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sebelum Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/mdspsb"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sesudah Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/mdspss"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-                </LinearLayout>
                 <!--                md Discharge press-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -897,7 +653,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3. Discharge Press"
+                        android:text="2. Discharge Press"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -922,7 +678,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="175"
+                            android:text=""
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -947,7 +703,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="Kg/Cm²"
+                            android:text="bar"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1009,7 +765,7 @@
                             android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
-                <!--                md fuel level-->
+                <!--                md lube oil level-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1019,7 +775,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="4. Fuel Level"
+                        android:text="3. Lube Oil Level"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -1044,7 +800,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="N"
+                            android:text="Normal"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1091,7 +847,7 @@
                             android:textStyle="italic" />
 
                         <Spinner
-                            android:id="@+id/mdflsb"
+                            android:id="@+id/mdlolsb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1118,7 +874,7 @@
                             android:textStyle="italic" />
 
                         <Spinner
-                            android:id="@+id/mdflss"
+                            android:id="@+id/mdlolss"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -1139,7 +895,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="5. Auto Start"
+                        android:text="4. Auto Start"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -1164,7 +920,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="9"
+                            android:text="7"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1347,128 +1103,6 @@
                             android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
-                <!--                de lube oil press-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="2. Lube Oil Press"
-                        android:textColor="@color/primary_31"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Perform"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="73"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Satuan"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Psi"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sebelum Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/delosb"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sesudah Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/deloss"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-                </LinearLayout>
                 <!--                de battrery volt-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1479,7 +1113,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3. Battery Voltage"
+                        android:text="2. Battery Voltage"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -1504,7 +1138,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="26"
+                            android:text="12"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1529,7 +1163,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="V"
+                            android:text="VDC"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1601,7 +1235,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="4. Battery Ampere"
+                        android:text="3. Battery Ampere"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -1626,7 +1260,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="4"
+                            android:text="40"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1651,7 +1285,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="A"
+                            android:text="Ampere"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1713,7 +1347,7 @@
                             android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
-                <!--                de battry lvl-->
+                <!--                de speed-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1723,7 +1357,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="5. Battery Level"
+                        android:text="4. Speed"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -1748,7 +1382,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="N"
+                            android:text="3000"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1773,7 +1407,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="-"
+                            android:text="Rpm"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -1794,13 +1428,14 @@
                             android:textSize="14sp"
                             android:textStyle="italic" />
 
-                        <Spinner
-                            android:id="@+id/deblsb"
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/dessb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/bg_spinner_border"
-                            android:entries="@array/low"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp"
                             android:textStyle="italic" />
@@ -1821,133 +1456,14 @@
                             android:textSize="14sp"
                             android:textStyle="italic" />
 
-                        <Spinner
-                            android:id="@+id/deblss"
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/desss"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/bg_spinner_border"
-                            android:entries="@array/low"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-                </LinearLayout>
-                <!--                de full lvl-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="6. Fuel Level"
-                        android:textColor="@color/primary_31"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
                             android:paddingStart="10dp"
-                            android:text="Perform"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="N"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Satuan"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="-"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sebelum Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <Spinner
-                            android:id="@+id/deflsb"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_spinner_border"
-                            android:entries="@array/low"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sesudah Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <Spinner
-                            android:id="@+id/deflss"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_spinner_border"
-                            android:entries="@array/low"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp"
                             android:textStyle="italic" />
@@ -1963,7 +1479,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="7. Lube Oil Level"
+                        android:text="5. Lube Oil Level"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -1988,7 +1504,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="N"
+                            android:text="Normal"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -2073,6 +1589,250 @@
                             android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
+                <!--                de lube oil press-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6. Lube Oil Press"
+                        android:textColor="@color/primary_31"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Perform"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Satuan"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Psi"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sebelum Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/delopsb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sesudah Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/delopss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--                de lube oil temperature-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7. Lube Oil Temperature"
+                        android:textColor="@color/primary_31"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Perform"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text=""
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Satuan"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="°C"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sebelum Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/delotsb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sesudah Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/delotss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                </LinearLayout>
                 <!--                de water cooler lvl-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2083,7 +1843,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="8. Water Cooler Level"
+                        android:text="8. Water Coolent Level"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -2193,7 +1953,7 @@
                             android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
-                <!--                de speed-->
+                <!--                de full tank lvl-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -2203,7 +1963,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="9. Speed"
+                        android:text="9. Fuel Tank Level"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -2228,7 +1988,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="2100"
+                            android:text=">600"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -2253,7 +2013,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="Rpm"
+                            android:text="L"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -2274,14 +2034,13 @@
                             android:textSize="14sp"
                             android:textStyle="italic" />
 
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/dessb"
+                        <Spinner
+                            android:id="@+id/deftlsb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
+                            android:background="@drawable/bg_spinner_border"
+                            android:entries="@array/low"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp"
                             android:textStyle="italic" />
@@ -2302,136 +2061,13 @@
                             android:textSize="14sp"
                             android:textStyle="italic" />
 
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/desss"
+                        <Spinner
+                            android:id="@+id/deftlss"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-                </LinearLayout>
-                <!--                de suction press-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="10. Suction Press"
-                        android:textColor="@color/primary_31"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Perform"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="14,7"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Satuan"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Psi"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sebelum Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/despsb"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingStart="16dp"
-                            android:text="- Sesudah Start"
-                            android:textColor="@color/primary_31"
-                            android:textSize="14sp"
-                            android:textStyle="italic" />
-
-                        <EditText
-                            android:inputType="textPersonName"
-                            android:id="@+id/despss"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_edt_text_border"
-                            android:paddingStart="10dp"
+                            android:background="@drawable/bg_spinner_border"
+                            android:entries="@array/low"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp"
                             android:textStyle="italic" />
@@ -2447,7 +2083,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="11. Discharge Press"
+                        android:text="10. Discharge Press"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -2472,7 +2108,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="175"
+                            android:text=""
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -2497,7 +2133,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="Psi"
+                            android:text="bar"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -2569,7 +2205,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="12. Auto Start"
+                        android:text="11. Auto Start"
                         android:textColor="@color/primary_31"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -2594,7 +2230,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="10dp"
-                            android:text="8,5"
+                            android:text="5"
                             android:textColor="@color/primary_31"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -2681,6 +2317,374 @@
                             android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
+                <!--                de return line rate-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12. Return Line Rate"
+                        android:textColor="@color/primary_31"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Perform"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="1000"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Satuan"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Gallon/Min"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sebelum Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/derlrsb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sesudah Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/derlrss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--                de header line pressure-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="13. Header Line Pressure"
+                        android:textColor="@color/primary_31"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Perform"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="9"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Satuan"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Kg/Cm²"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sebelum Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/dehlpsb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sesudah Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/dehlpss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--                de relief valve pressure-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="14. Relief Valve Pressure"
+                        android:textColor="@color/primary_31"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Perform"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="5,5"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="Satuan"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="10dp"
+                            android:text="bar"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sebelum Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/dervpsb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="16dp"
+                            android:text="- Sesudah Start"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:id="@+id/dervpss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edt_text_border"
+                            android:paddingStart="10dp"
+                            android:textColor="@color/primary_31"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
 
                 <!--                keterangan-->
                 <View

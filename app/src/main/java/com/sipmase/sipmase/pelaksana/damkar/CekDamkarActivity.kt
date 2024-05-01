@@ -48,7 +48,7 @@ class CekDamkarActivity : AppCompatActivity(), AnkoLogger {
 
         val sdf = SimpleDateFormat("yyyy-M-dd")
         currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekdamkar!!.tanggalCek
         if(cekdamkar!!.isStatus == 1){
             binding.btnDraft.visibility = View.GONE
             binding.btnSubmit.visibility = View.GONE
@@ -210,7 +210,7 @@ class CekDamkarActivity : AppCompatActivity(), AnkoLogger {
                 val updateDamkar = UpdateDamkar(
                     spion.toString(),
                     hazard.toString(),
-                    currentDate,
+                    cekdamkar!!.tanggalCek,
                     sessionManager.getNama(),
                     lamp_rem.toString(),
                     sorot.toString(),
@@ -302,7 +302,7 @@ class CekDamkarActivity : AppCompatActivity(), AnkoLogger {
                 val updateDamkar = UpdateDamkar(
                     spion.toString(),
                     hazard.toString(),
-                    currentDate,
+                    cekdamkar!!.tanggalCek,
                     sessionManager.getNama(),
                     lamp_rem.toString(),
                     sorot.toString(),

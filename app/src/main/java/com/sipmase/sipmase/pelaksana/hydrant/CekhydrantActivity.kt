@@ -32,9 +32,6 @@ class CekhydrantActivity : AppCompatActivity(), AnkoLogger {
         var cekhydrant: ScheduleHydrantPelaksanaModel? = null
 
     }
-
-    var currentDate: String? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cekhydrant)
@@ -44,9 +41,7 @@ class CekhydrantActivity : AppCompatActivity(), AnkoLogger {
         cekhydrant =
             gson.fromJson(intent.getStringExtra("cekhydrant"), ScheduleHydrantPelaksanaModel::class.java)
 
-        val sdf = SimpleDateFormat("yyyy-M-dd")
-        currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekhydrant!!.tanggalCek
 
 
         sessionManager = SessionManager(this)
@@ -142,7 +137,7 @@ class CekhydrantActivity : AppCompatActivity(), AnkoLogger {
                     cekhydrant!!.id,
                     spnflashing.toString(),
                     spnselang.toString(),
-                    currentDate
+                    cekhydrant!!.tanggalCek
                 )
 
                 api.update_schedule_hydrant(updateschedulehydrant).enqueue(object :
@@ -210,7 +205,7 @@ class CekhydrantActivity : AppCompatActivity(), AnkoLogger {
                     cekhydrant!!.id,
                     spnflashing.toString(),
                     spnselang.toString(),
-                    currentDate
+                    cekhydrant!!.tanggalCek
                 )
 
                 api.update_schedule_hydrant(updateschedulehydrant).enqueue(object :

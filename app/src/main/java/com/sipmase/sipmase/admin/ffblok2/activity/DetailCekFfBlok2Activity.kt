@@ -15,7 +15,8 @@ import com.sipmase.sipmase.R
 import com.sipmase.sipmase.constant.Constant
 import com.sipmase.sipmase.databinding.ActivityDetailCekFfBlok2Binding
 import com.sipmase.sipmase.model.PostDataResponse
-import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
+//import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
+import com.sipmase.sipmase.model.ffblok2.FFBlok2NewModel
 import com.sipmase.sipmase.webservice.ApiClient
 import com.squareup.picasso.Picasso
 import org.jetbrains.anko.AnkoLogger
@@ -26,7 +27,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class DetailCekFfBlok2Activity : AppCompatActivity(), AnkoLogger {
-    lateinit var cekffblok2: FFBlok2Model
+    lateinit var cekffblok2: FFBlok2NewModel
     lateinit var binding: ActivityDetailCekFfBlok2Binding
 
     lateinit var progressDialog: ProgressDialog
@@ -39,7 +40,7 @@ class DetailCekFfBlok2Activity : AppCompatActivity(), AnkoLogger {
         progressDialog = ProgressDialog(this)
         val gson = Gson()
         cekffblok2 =
-            gson.fromJson(intent.getStringExtra("cekffblok2"), FFBlok2Model::class.java)
+            gson.fromJson(intent.getStringExtra("cekffblok2"), FFBlok2NewModel::class.java)
 
         if (cekffblok2.isStatus == 1) {
             binding.lyBtn.visibility = View.VISIBLE
@@ -69,33 +70,27 @@ class DetailCekFfBlok2Activity : AppCompatActivity(), AnkoLogger {
         Picasso.get().load("${Constant.foto_url+"foto-ffblok2/"}${cekffblok2.k3Ttd}").into(binding.ttdk3)
         Picasso.get().load("${Constant.foto_url+"foto-ffblok2/"}${cekffblok2.supervisorTtd}").into(binding.ttdspv)
 
-        binding.jpwpsb.text = cekffblok2.spWaktuPencatatanSebelumStart
-        binding.jpwpss.text = cekffblok2.spWaktuPencatatanSesudahStart
-        //Sunction Press
-        binding.jpspsb.text = cekffblok2.spSuctionPressSebelumStart
-        binding.jpspss.text = cekffblok2.spSuctionPressSesudahStart
+        binding.jpwpsb.text = cekffblok2.jpWaktuPencatatanSebelumStart
+        binding.jpwpss.text = cekffblok2.jpWaktuPencatatanSesudahStart
         //Discharge Press
-        binding.jpdpsb.text = cekffblok2.spDischargePressSebelumStart
-        binding.jpdpss.text = cekffblok2.spDischargePressSesudahStart
+        binding.jpdpsb.text = cekffblok2.jpDischargePressSebelumStart
+        binding.jpdpss.text = cekffblok2.jpDischargePressSesudahStart
         //Auto Start
-        binding.jpassb.text = cekffblok2.spAutoStartSebelumStart
-        binding.jpassb.text = cekffblok2.spAutoStartSesudahStart
+        binding.jpassb.text = cekffblok2.jpAutoStartSebelumStart
+        binding.jpasss.text = cekffblok2.jpAutoStartSesudahStart
         //Auto Stop
-        binding.jpastsb.text = cekffblok2.spAutoStopSebelumStart
-        binding.jpastss.text = cekffblok2.spAutoStopSesudahStart
+        binding.jpastsb.text = cekffblok2.jpAutoStopSebelumStart
+        binding.jpastss.text = cekffblok2.jpAutoStopSesudahStart
         //=================Motor Driven===================
         //waktu pencatatan
         binding.mdwpsb.text = cekffblok2.mdWaktuPencatatanSebelumStart
         binding.mdwpss.text = cekffblok2.mdWaktuPencatatanSesudahStart
-        //sunction press
-        binding.mdspsb.text = cekffblok2.mdSuctionPressSebelumStart
-        binding.mdspss.text = cekffblok2.mdSuctionPressSesudahStart
         //discharge press
         binding.mddpsb.text = cekffblok2.mdDischargePressSebelumStart
         binding.mddpss.text = cekffblok2.mdDischargePressSesudahStart
-        //Fuel Level
-        binding.mdflsb.text = cekffblok2.mdFullLevelSebelumStart
-        binding.mdflss.text = cekffblok2.mdFullLevelSesudahStart
+        //lube oil level
+        binding.mdlolsb.text = cekffblok2.mdLubeOilLevelSebelumStart
+        binding.mdlolss.text = cekffblok2.mdLubeOilLevelSesudahStart
         //Auto Start
         binding.mdassb.text = cekffblok2.mdAutoStartSebelumStart
         binding.mdasss.text = cekffblok2.mdAutoStartSesudahStart
@@ -103,40 +98,45 @@ class DetailCekFfBlok2Activity : AppCompatActivity(), AnkoLogger {
         //waktu pencatatan
         binding.dewpsb.text = cekffblok2.deWaktuPencatatanSebelumStart
         binding.dewpss.text = cekffblok2.deWaktuPencatatanSesudahStart
-        //Lube Oil Press
-        binding.delosb.text = cekffblok2.deLubeOilPressSebelumStart
-        binding.deloss.text = cekffblok2.deLubeOilPressSesudahStart
         //Battery VOltage
         binding.debvsb.text = cekffblok2.deBatteryVoltageSebelumStart
         binding.debvss.text = cekffblok2.deBatteryVoltageSesudahStart
         //Battery Ampere
         binding.debasb.text = cekffblok2.deBatteryAmpereSebelumStart
         binding.debass.text = cekffblok2.deBatteryAmpereSesudahStart
-        //Battery Level
-        binding.deblsb.text = cekffblok2.deBatteryLevelSebelumStart
-        binding.deblss.text = cekffblok2.deBatteryLevelSesudahStart
-        //Fuel level
-        binding.deflsb.text = cekffblok2.deFuelLevelSebelumStart
-        binding.deflss.text = cekffblok2.deFuelLevelSesudahStart
-        //Lube Oil Level
-        binding.delolsb.text = cekffblok2.deLubeOilLevelSebelumStart
-        binding.delolss.text = cekffblok2.deLubeOilLevelSesudahStart
-        //Water COoler level
-        binding.dewclsb.text = cekffblok2.deWaterCoolerLevelSebelumStart
-        binding.dewclss.text = cekffblok2.deWaterCoolerLevelSesudahStart
         //Speed
         binding.dessb.text = cekffblok2.deSpeedSebelumStart
         binding.desss.text = cekffblok2.deSpeedSesudahStart
-
-        //Sunction Press
-        binding.despsb.text = cekffblok2.deSuctionPressSebelumStart
-        binding.despss.text = cekffblok2.deSuctionPressSesudahStart
+        //Lube Oil Level
+        binding.delolsb.text = cekffblok2.deLubeOilLevelSebelumStart
+        binding.delolss.text = cekffblok2.deLubeOilLevelSesudahStart
+        //Lube Oil pressure
+        binding.delopsb.text = cekffblok2.deLubeOilPressSebelumStart
+        binding.delopss.text = cekffblok2.deLubeOilPressSesudahStart
+        //Lube Oil temp
+        binding.delotsb.text = cekffblok2.deLubeOilTempSebelumStart
+        binding.delotss.text = cekffblok2.deLubeOilTempSesudahStart
+        //Water coolent level
+        binding.dewclsb.text = cekffblok2.deWaterCoolentLevelSebelumStart
+        binding.dewclss.text = cekffblok2.deWaterCoolentLevelSesudahStart
+        //Fuel tank
+        binding.deftlsb.text = cekffblok2.deFuelTankLevelSebelumStart
+        binding.deftlss.text = cekffblok2.deFuelTankLevelSesudahStart
         //Discharge Press
         binding.dedpsb.text = cekffblok2.deDischargePressSebelumStart
         binding.dedpss.text = cekffblok2.deDischargePressSesudahStart
         //Auto Start
         binding.deassb.text = cekffblok2.deAutoStartSebelumStart
         binding.deasss.text = cekffblok2.deAutoStartSesudahStart
+        //return line rate
+        binding.derlrsb.text = cekffblok2.deReturnLineRateSebelumStart
+        binding.derlrss.text = cekffblok2.deReturnLineRateSesudahStart
+        //header line pressure
+        binding.dehlpsb.text = cekffblok2.deHeaderLinePressureSebelumStart
+        binding.dehlpss.text = cekffblok2.deHeaderLinePressureSesudahStart
+        //relief valve pressure
+        binding.dervpsb.text = cekffblok2.deReliefValvePressureSebelumStart
+        binding.dervpss.text = cekffblok2.deReliefValvePressureSesudahStart
 
         binding.btnTolak.setOnClickListener {
             val builder = AlertDialog.Builder(this)

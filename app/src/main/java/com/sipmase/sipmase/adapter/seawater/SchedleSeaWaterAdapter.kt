@@ -13,7 +13,7 @@ import com.sipmase.sipmase.model.edgblok1.EdgBlokModel
 import com.sipmase.sipmase.model.edgblok2.EdgBlok2Model
 import com.sipmase.sipmase.model.edgblok3.EdgBlok3Model
 import com.sipmase.sipmase.model.ffblok.FFBlokModel
-import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
+//import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
 import com.sipmase.sipmase.model.seawater.SeaWaterModel
 
 class SchedleSeaWaterAdapter(

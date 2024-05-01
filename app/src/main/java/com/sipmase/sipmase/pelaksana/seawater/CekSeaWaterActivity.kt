@@ -44,8 +44,6 @@ class CekSeaWaterActivity : AppCompatActivity(), AnkoLogger {
 
     }
 
-    var currentDate: String? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cek_sea_water)
@@ -58,9 +56,7 @@ class CekSeaWaterActivity : AppCompatActivity(), AnkoLogger {
                 intent.getStringExtra("cekseawater"),
                 SeaWaterModel::class.java
             )
-        val sdf = SimpleDateFormat("yyyy-M-dd")
-        currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekseawater!!.tanggalCek
 
         binding.namak3.text = cekseawater!!.k3Nama
         binding.namaoperator.text = cekseawater!!.operatorNama
@@ -576,7 +572,7 @@ class CekSeaWaterActivity : AppCompatActivity(), AnkoLogger {
                 )
                 val body_tgl_pemeriksa: RequestBody = RequestBody.create(
                     MediaType.parse("text/plain"),
-                    currentDate
+                    cekseawater!!.tanggalCek
                 )
                 val body_tw: RequestBody = RequestBody.create(
                     MediaType.parse("text/plain"),
@@ -1006,7 +1002,7 @@ class CekSeaWaterActivity : AppCompatActivity(), AnkoLogger {
             )
             val body_tgl_pemeriksa: RequestBody = RequestBody.create(
                 MediaType.parse("text/plain"),
-                currentDate
+                cekseawater!!.tanggalCek
             )
             val body_tw: RequestBody = RequestBody.create(
                 MediaType.parse("text/plain"),

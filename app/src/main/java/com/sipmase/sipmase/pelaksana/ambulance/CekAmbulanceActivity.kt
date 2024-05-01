@@ -32,8 +32,6 @@ class CekAmbulanceActivity : AppCompatActivity(), AnkoLogger {
     companion object {
         var cekambulance: AmbulanceModel? = null
     }
-
-    var currentDate: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cek_ambulance)
@@ -48,8 +46,7 @@ class CekAmbulanceActivity : AppCompatActivity(), AnkoLogger {
             )
 
         val sdf = SimpleDateFormat("yyyy-M-dd")
-        currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekambulance!!.tanggalCek
         if(cekambulance!!.isStatus == 1){
             binding.btnDraft.visibility = View.GONE
             binding.btnSubmit.visibility = View.GONE
@@ -124,7 +121,7 @@ class CekAmbulanceActivity : AppCompatActivity(), AnkoLogger {
                 loading(true)
                 val updateAmbulance = UpdateAmbulance(
                     txttk,
-                    currentDate,
+                    cekambulance!!.tanggalCek,
                     sessionManager.getNama(),
                     txtaKs,
                     txta,
@@ -203,7 +200,7 @@ class CekAmbulanceActivity : AppCompatActivity(), AnkoLogger {
             loading(true)
             val updateAmbulance = UpdateAmbulance(
                 txttk,
-                currentDate,
+                cekambulance!!.tanggalCek,
                 sessionManager.getNama(),
                 txtaKs,
                 txta,

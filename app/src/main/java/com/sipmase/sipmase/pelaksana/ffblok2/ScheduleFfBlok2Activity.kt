@@ -13,7 +13,8 @@ import com.sipmase.sipmase.databinding.ActivityScheduleFfBlok1Binding
 import com.sipmase.sipmase.databinding.ActivityScheduleFfBlok2Binding
 import com.sipmase.sipmase.model.ffblok.FFBlokModel
 import com.sipmase.sipmase.model.ffblok.FFBlokResponse
-import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
+import com.sipmase.sipmase.model.ffblok2.FFBlok2NewModel
+//import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
 import com.sipmase.sipmase.model.ffblok2.FFBlok2Response
 import com.sipmase.sipmase.pelaksana.ffblok1.CekFfBlok1Activity
 import com.sipmase.sipmase.webservice.ApiClient
@@ -64,7 +65,7 @@ class ScheduleFfBlok2Activity : AppCompatActivity(), AnkoLogger {
                         if (response.isSuccessful) {
                             loading(false)
                             if (response.body()!!.data!!.isNotEmpty()) {
-                                val notesList = mutableListOf<FFBlok2Model>()
+                                val notesList = mutableListOf<FFBlok2NewModel>()
                                 val data = response.body()
                                 for (hasil in data!!.data!!) {
                                     notesList.add(hasil)
@@ -78,7 +79,7 @@ class ScheduleFfBlok2Activity : AppCompatActivity(), AnkoLogger {
                                         SchedleFfBlok2PelaksanaAdapter.Dialog {
                                         override fun onClick(
                                             position: Int,
-                                            note: FFBlok2Model
+                                            note: FFBlok2NewModel
                                         ) {
                                             val builder =
                                                 AlertDialog.Builder(this@ScheduleFfBlok2Activity)

@@ -18,7 +18,8 @@ import com.sipmase.sipmase.admin.ffblok2.activity.DetailCekFfBlok2Activity
 import com.sipmase.sipmase.databinding.FragmentHasilFfBlok2Binding
 import com.sipmase.sipmase.databinding.FragmentScheduleFfBlok2Binding
 import com.sipmase.sipmase.model.PostDataResponse
-import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
+import com.sipmase.sipmase.model.ffblok2.FFBlok2NewModel
+//import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
 import com.sipmase.sipmase.model.ffblok2.FFBlok2Response
 import com.sipmase.sipmase.webservice.ApiClient
 import com.sipmat.sipmat.adapter.damkar.SchedleFfBlok2Adapter
@@ -125,7 +126,7 @@ class HasilFfBlok2Fragment : Fragment(), AnkoLogger {
                     try {
                         if (response.isSuccessful) {
                             loading(false)
-                            val notesList = mutableListOf<FFBlok2Model>()
+                            val notesList = mutableListOf<FFBlok2NewModel>()
                             val data = response.body()
                             if (data!!.data!!.isEmpty()) {
                                 binding.tvkosong.visibility = View.VISIBLE
@@ -140,7 +141,7 @@ class HasilFfBlok2Fragment : Fragment(), AnkoLogger {
                                     mAdapter = SchedleFfBlok2Adapter(notesList, requireActivity())
                                     binding.rvscheduleffblok.adapter = mAdapter
                                     mAdapter.setDialog(object : SchedleFfBlok2Adapter.Dialog {
-                                        override fun onClick(position: Int, note: FFBlok2Model) {
+                                        override fun onClick(position: Int, note: FFBlok2NewModel) {
                                             val builder =
                                                 AlertDialog.Builder(requireActivity())
                                             builder.setTitle("Cek Schedule ? ")

@@ -56,7 +56,7 @@ class CekEdgBlok1Activity : AppCompatActivity(), AnkoLogger {
 
         val sdf = SimpleDateFormat("yyyy-M-dd")
         currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekedgblok1!!.tanggalCek
 
         binding.namak3.text = cekedgblok1!!.k3Nama
         binding.namaoperator.text = cekedgblok1!!.operatorNama
@@ -258,12 +258,10 @@ class CekEdgBlok1Activity : AppCompatActivity(), AnkoLogger {
                 "${cekedgblok1!!.id}"
             )
 
-            val sdf = SimpleDateFormat("yyyy-M-dd ")
-            val tanggal_cek = sdf.format(Date())
 
             val body_tanggal_cek: RequestBody = RequestBody.create(
                 MediaType.parse("text/plain"),
-                "${tanggal_cek}"
+                "${cekedgblok1!!.tanggalCek}"
             )
             //=================parameter===================
             //waktu pencatatan
@@ -647,12 +645,10 @@ class CekEdgBlok1Activity : AppCompatActivity(), AnkoLogger {
                 "${cekedgblok1!!.id}"
             )
 
-            val sdf = SimpleDateFormat("yyyy-M-dd ")
-            val tanggal_cek = sdf.format(Date())
 
             val body_tanggal_cek: RequestBody = RequestBody.create(
                 MediaType.parse("text/plain"),
-                "${tanggal_cek}"
+                "${cekedgblok1!!.tanggalCek}"
             )
             //=================parameter===================
             //waktu pencatatan

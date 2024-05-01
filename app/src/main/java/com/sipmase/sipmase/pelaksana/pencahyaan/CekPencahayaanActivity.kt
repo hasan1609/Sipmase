@@ -31,8 +31,6 @@ class CekPencahayaanActivity : AppCompatActivity(), AnkoLogger {
         var cekpencahayaan: SchedulePencahayaanModel? = null
     }
 
-    var currentDate: String? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cek_pencahayaan)
@@ -45,8 +43,7 @@ class CekPencahayaanActivity : AppCompatActivity(), AnkoLogger {
             )
 
         val sdf = SimpleDateFormat("yyyy-M-dd")
-        currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekpencahayaan!!.tanggalCek
 
 
         sessionManager = SessionManager(this)
@@ -101,7 +98,7 @@ class CekPencahayaanActivity : AppCompatActivity(), AnkoLogger {
 //                    luxrata2.toFloat(),
                     sumber_pencahayaan,
                     cekpencahayaan!!.id,
-                    currentDate
+                    cekpencahayaan!!.tanggalCek
                 )
 
 
@@ -166,7 +163,7 @@ class CekPencahayaanActivity : AppCompatActivity(), AnkoLogger {
 //                    luxrata2.toFloat(),
                     sumber_pencahayaan,
                     cekpencahayaan!!.id,
-                    currentDate
+                    cekpencahayaan!!.tanggalCek
                 )
 
 

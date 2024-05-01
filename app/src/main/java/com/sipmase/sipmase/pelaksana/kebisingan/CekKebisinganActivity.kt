@@ -34,8 +34,6 @@ class CekKebisinganActivity : AppCompatActivity(), AnkoLogger {
 
     }
 
-    var currentDate: String? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cek_kebisingan)
@@ -48,9 +46,7 @@ class CekKebisinganActivity : AppCompatActivity(), AnkoLogger {
                 ScheduleKebisinganModel::class.java
             )
 
-        val sdf = SimpleDateFormat("yyyy-M-dd")
-        currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekkebisingan!!.tanggalCek
 
 
         sessionManager = SessionManager(this)
@@ -97,7 +93,7 @@ class CekKebisinganActivity : AppCompatActivity(), AnkoLogger {
 //                dbrata2,
                     sessionManager.getNama().toString(),
                     cekkebisingan!!.tanggalCek,
-                    currentDate,
+                    cekkebisingan!!.tanggalCek,
                     cekkebisingan!!.isStatus,
                     dbx2,
                     dbx3,
@@ -159,7 +155,7 @@ class CekKebisinganActivity : AppCompatActivity(), AnkoLogger {
 //                dbrata2,
                     sessionManager.getNama().toString(),
                     cekkebisingan!!.tanggalCek,
-                    currentDate,
+                    cekkebisingan!!.tanggalCek,
                     1,
                     dbx2,
                     dbx3,

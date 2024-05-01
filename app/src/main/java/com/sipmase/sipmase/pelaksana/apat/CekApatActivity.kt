@@ -43,7 +43,7 @@ class CekApatActivity : AppCompatActivity(), AnkoLogger {
 
         val sdf = SimpleDateFormat("yyyy-M-dd")
         currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekapat!!.tanggalCek
 
         sessionManager = SessionManager(this)
         progressDialog = ProgressDialog(this)
@@ -112,7 +112,7 @@ class CekApatActivity : AppCompatActivity(), AnkoLogger {
                 spnpasir.toString(),
                 cekapat!!.id,
                 spnsekop.toString(),
-                null
+                cekapat!!.tanggalCek
             )
 
             api.update_schedule_apat(updatescheduleapat).enqueue(object :
@@ -170,7 +170,7 @@ class CekApatActivity : AppCompatActivity(), AnkoLogger {
                     spnpasir.toString(),
                     cekapat!!.id,
                     spnsekop.toString(),
-                    currentDate
+                    cekapat!!.tanggalCek
                 )
 
                 api.update_schedule_apat(updatescheduleapat).enqueue(object :

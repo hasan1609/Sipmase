@@ -13,10 +13,11 @@ import com.sipmase.sipmase.model.edgblok1.EdgBlokModel
 import com.sipmase.sipmase.model.edgblok2.EdgBlok2Model
 import com.sipmase.sipmase.model.edgblok3.EdgBlok3Model
 import com.sipmase.sipmase.model.ffblok.FFBlokModel
-import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
+//import com.sipmase.sipmase.model.ffblok2.FFBlok2Model
+import com.sipmase.sipmase.model.ffblok2.FFBlok2NewModel
 
 class SchedleFfBlok2Adapter(
-    private val notesList: MutableList<FFBlok2Model>,
+    private val notesList: MutableList<FFBlok2NewModel>,
     private val context: Context,
 
     ) : RecyclerView.Adapter<SchedleFfBlok2Adapter.ViewHolder>() {
@@ -26,7 +27,7 @@ class SchedleFfBlok2Adapter(
 
 
     interface Dialog {
-        fun onClick(position: Int, note : FFBlok2Model)
+        fun onClick(position: Int, note : FFBlok2NewModel)
     }
 
     fun setDialog(dialog: Dialog) {

@@ -40,7 +40,6 @@ class CekEdgBlok3Activity : AppCompatActivity(), AnkoLogger {
         var cekedgblok3: EdgBlok3Model? = null
     }
 
-    var currentDate: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cek_edg_blok3)
@@ -54,9 +53,7 @@ class CekEdgBlok3Activity : AppCompatActivity(), AnkoLogger {
                 EdgBlok3Model::class.java
             )
 
-        val sdf = SimpleDateFormat("yyyy-M-dd")
-        currentDate = sdf.format(Date())
-        binding.txttgl.text = currentDate
+        binding.txttgl.text = cekedgblok3!!.tanggalCek
 
         binding.namak3.text = cekedgblok3!!.k3Nama
         binding.namaoperator.text = cekedgblok3!!.operatorNama
@@ -266,12 +263,9 @@ class CekEdgBlok3Activity : AppCompatActivity(), AnkoLogger {
                 "${cekedgblok3!!.id}"
             )
 
-            val sdf = SimpleDateFormat("yyyy-M-dd ")
-            val tanggal_cek = sdf.format(Date())
-
             val body_tanggal_cek: RequestBody = RequestBody.create(
                 MediaType.parse("text/plain"),
-                "${tanggal_cek}"
+                "${cekedgblok3!!.tanggalCek}"
             )
             //=================parameter===================
             //oil preasure
@@ -702,12 +696,9 @@ class CekEdgBlok3Activity : AppCompatActivity(), AnkoLogger {
                 "${cekedgblok3!!.id}"
             )
 
-            val sdf = SimpleDateFormat("yyyy-M-dd ")
-            val tanggal_cek = sdf.format(Date())
-
             val body_tanggal_cek: RequestBody = RequestBody.create(
                 MediaType.parse("text/plain"),
-                "${tanggal_cek}"
+                "${cekedgblok3!!.tanggalCek}"
             )
             //=================parameter===================
             //oil preasure
