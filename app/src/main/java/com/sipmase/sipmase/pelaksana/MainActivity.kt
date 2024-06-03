@@ -20,6 +20,7 @@ import com.sipmase.sipmase.pelaksana.damkar.ScheduleDamkarActivity
 import com.sipmase.sipmase.pelaksana.edgblok1.ScheduleEdgBlok1Activity
 import com.sipmase.sipmase.pelaksana.edgblok2.ScheduleEdgBlok2Activity
 import com.sipmase.sipmase.pelaksana.edgblok3.ScheduleEdgBlok3Activity
+import com.sipmase.sipmase.pelaksana.eloto.ElotoActivity
 import com.sipmase.sipmase.pelaksana.ffblok1.ScheduleFfBlok1Activity
 import com.sipmase.sipmase.pelaksana.ffblok2.ScheduleFfBlok2Activity
 import com.sipmase.sipmase.pelaksana.hydrant.ScheduleHydrantActivity
@@ -80,6 +81,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.txtmobilambulance.setOnClickListener {
             startActivity<ScheduleAmbulanceActivity>()
+        }
+        binding.txteloto.setOnClickListener {
+            startActivity<ElotoActivity>()
         }
 
 

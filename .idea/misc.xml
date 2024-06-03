@@ -13,9 +13,11 @@
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/bg_edt_text_shadow.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/bg_top.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/bg_top_tw.xml" value="0.1" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/border_foto.xml" value="0.109" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/gradient_red.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_edt_text_kg.xml" value="0.154" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_logout.xml" value="0.1" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_plus.xml" value="0.109" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_plus_ui.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_setting.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/null_radio_button.xml" value="0.1" />
@@ -31,7 +33,7 @@
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_apar_pelaksana.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_apat.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_cek_ambulance.xml" value="0.25" />
-        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_cek_apar.xml" value="0.33" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_cek_apar.xml" value="0.22" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_cek_apar_kadaluarsa.xml" value="0.2234375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_cek_apat.xml" value="0.14" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_cek_damkar.xml" value="0.209375" />
@@ -54,14 +56,17 @@
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_edgblok1.xml" value="0.17023809523809524" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_edgblok_1.xml" value="0.2234375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_ff_blok1.xml" value="0.25" />
-        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_ff_blok2.xml" value="0.25" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_ff_blok2.xml" value="0.1761612620508326" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_hydrant.xml" value="0.33" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_kebisingan.xml" value="0.25" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_pencahayaan.xml" value="0.25" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_cek_sea_water.xml" value="0.18" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_eloto.xml" value="0.2234375" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_detail_item_eloto.xml" value="0.2234375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_edg_blok1.xml" value="0.2234375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_edg_blok2.xml" value="0.2234375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_edg_blok3.xml" value="0.2234375" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_eloto.xml" value="0.209375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_ff_blok1.xml" value="0.2234375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_ff_blok2.xml" value="0.209375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_home.xml" value="0.25" />
@@ -87,6 +92,9 @@
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_schedule_pencahayaan.xml" value="0.209375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_schedule_sea_water.xml" value="0.209375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_seawater.xml" value="0.2234375" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_tambah_isolasi.xml" value="0.209375" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_tambah_loto.xml" value="0.1971554683668465" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/activity_tambah_penormalan.xml" value="0.209375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/bottom_sheet_add_item_apar.xml" value="0.25" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/bottom_sheet_add_item_apat.xml" value="0.12182971014492754" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/bottom_sheet_add_item_hydrant.xml" value="0.12182971014492754" />
@@ -145,10 +153,14 @@
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/fragment_ttd.xml" value="0.16" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/fragment_tw1.xml" value="0.12" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/fragment_tw4.xml" value="0.1" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/grouped_eloto.xml" value="0.2234375" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/item_eloto.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/layoutgg.xml" value="0.18425925925925926" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/list_apar.xml" value="0.16" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/list_apat.xml" value="0.18" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/list_check_box.xml" value="0.16" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/list_data_eloto.xml" value="0.2" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/list_eloto.xml" value="0.22" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/list_hydrant.xml" value="0.12182971014492754" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/list_kebisingan.xml" value="0.12182971014492754" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/list_pelaksana.xml" value="0.25" />

@@ -17,6 +17,24 @@
         android:theme="@style/Theme.Sipmase"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".pelaksana.eloto.DetailItemElotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.eloto.DetailElotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.eloto.TambahPenormalanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.eloto.TambahIsolasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.eloto.TambahLotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelaksana.eloto.ElotoActivity"
+            android:exported="false" />
+        <activity
             android:name=".pelaksana.seawater.CekSeaWaterActivity"
             android:exported="false" />
         <activity

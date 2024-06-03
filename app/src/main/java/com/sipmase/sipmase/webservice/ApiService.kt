@@ -11,6 +11,9 @@ import com.sipmase.sipmase.model.damkar.DamkarResponse
 import com.sipmase.sipmase.model.edgblok1.EdgBlokResponse
 import com.sipmase.sipmase.model.edgblok2.EdgBlok2Response
 import com.sipmase.sipmase.model.edgblok3.EdgBlok3Response
+import com.sipmase.sipmase.model.eloto.LastTagResponse
+import com.sipmase.sipmase.model.eloto.ResponseEloto
+import com.sipmase.sipmase.model.eloto.ResponseItemEloto
 import com.sipmase.sipmase.model.ffblok.FFBlokResponse
 import com.sipmase.sipmase.model.ffblok2.FFBlok2Response
 import com.sipmase.sipmase.model.hydrant.HydrantPickResponse
@@ -1426,7 +1429,45 @@ interface ApiService {
         @Part("id") id: RequestBody,
     ): Call<PostDataResponse>
 
+//===========================ELOTO====================
+    @GET("eloto")
+    fun getitemeloto(): Call<ResponseItemEloto>
 
+    @GET("data-eloto")
+    fun data_eloto(
+        @Query("tw") tw: String,
+        @Query("tahun") tahun: String
+    ): Call<ResponseEloto>
 
+    @GET("tag/eloto")
+    fun getLastTag(): Call<LastTagResponse>
+
+    @FormUrlEncoded
+    @POST("eloto")
+    fun tambaheloto(
+        @Field("id_tag") id_tag: String,
+        @Field("wo") wo: String,
+        @Field("peralatan") peralatan: String,
+        @Field("lokasi") lokasi: String,
+        @Field("posisi_awal") posisi_awal: String,
+        @Field("ket") ket: String
+    ): Call<PostDataResponse>
+
+    @FormUrlEncoded
+    @POST("penormalan")
+    fun tambahpenormalan(
+        @Field("id_tag") id_tag: String,
+        @Field("pic") pic: String,
+        @Field("posisi_normal") posisi_normal: String,
+    ): Call<PostDataResponse>
+
+    @Multipart
+    @POST("isolasi")
+    fun tambahisolasi(
+        @Part("id_tag") id_tag: RequestBody,
+        @Part("pic") pic: RequestBody,
+        @Part("posisi_isolasi") posisi_isolasi: RequestBody,
+        @Part eviden: MultipartBody.Part?
+    ): Call<PostDataResponse>
 }
 

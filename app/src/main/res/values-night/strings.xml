@@ -21,6 +21,7 @@
     <string name="title_schedule">Schedule</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eloto">E-Loto</string>
 
     <string-array name="jenisapar">
         <item>CO2</item>

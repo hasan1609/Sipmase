@@ -451,6 +451,32 @@
                             android:layout_height="wrap_content" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/txteloto"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:elevation="16dp">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ambulance"/>
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:text="@string/eloto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </GridLayout>
         </RelativeLayout>
     </ScrollView>
