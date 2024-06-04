@@ -1456,7 +1456,7 @@ interface ApiService {
     @FormUrlEncoded
     @POST("penormalan")
     fun tambahpenormalan(
-        @Field("id_tag") id_tag: String,
+        @Field("tag_id") tag_id: String,
         @Field("pic") pic: String,
         @Field("posisi_normal") posisi_normal: String,
     ): Call<PostDataResponse>
@@ -1464,7 +1464,7 @@ interface ApiService {
     @Multipart
     @POST("isolasi")
     fun tambahisolasi(
-        @Part("id_tag") id_tag: RequestBody,
+        @Part("tag_id") tag_id: RequestBody,
         @Part("pic") pic: RequestBody,
         @Part("posisi_isolasi") posisi_isolasi: RequestBody,
         @Part eviden: MultipartBody.Part?

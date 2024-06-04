@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable-v24/bg_btn_login.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable-v24/bg_top.xml" value="0.1" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/back.xml" value="0.1095" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/bg_btn_white.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/bg_btnlogin.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/bg_edittext.xml" value="0.1" />
@@ -15,7 +16,10 @@
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/bg_top_tw.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/border_foto.xml" value="0.109" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/gradient_red.xml" value="0.1" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1095" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_camera.xml" value="0.1095" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_edt_text_kg.xml" value="0.154" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_file.xml" value="0.1095" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_logout.xml" value="0.1" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_plus.xml" value="0.109" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/drawable/ic_plus_ui.xml" value="0.1" />
@@ -101,6 +105,7 @@
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/bottom_sheet_add_item_kebisingan.xml" value="0.15" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/bottom_sheet_add_item_pencahayaan.xml" value="0.12182971014492754" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/bottom_sheet_add_schedule.xml" value="0.2234375" />
+        <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/bottom_sheet_file_pick.xml" value="0.2234375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/fragment_apar_kadaluarsa.xml" value="0.2234375" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/fragment_bottom_sheet_add_schedule.xml" value="0.25" />
         <entry key="..\:/Users/hasan/AndroidStudioProjects/Sipmase/app/src/main/res/layout/fragment_bottom_sheet_add_schedule2.xml" value="0.25" />

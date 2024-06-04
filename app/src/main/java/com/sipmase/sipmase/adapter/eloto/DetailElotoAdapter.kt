@@ -10,8 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.sipmase.sipmase.R
 import com.sipmase.sipmase.model.eloto.ElotoModel
-import com.sipmase.sipmase.model.eloto.IsolasiModel
-import com.sipmase.sipmase.model.eloto.PenormalanModel
 
 
 class DetailElotoAdapter(
@@ -20,24 +18,33 @@ class DetailElotoAdapter(
 
     ) : RecyclerView.Adapter<DetailElotoAdapter.ViewHolder>() {
 
-    private var penormalanDialog: OnPenormalanClickListener? = null
-    private var isolasiDialog: OnIsolasiClickListener? = null
+        private var penormalanDialog: OnPenormalanClickListener? = null
+        private var isolasiDialog: OnIsolasiClickListener? = null
+        private var dialog: Dialog? = null
 
-    fun setOnIsolasiClickListener(listener: OnIsolasiClickListener) {
-        this.isolasiDialog = listener
-    }
+        fun setDialog(dialog: Dialog) {
+            this.dialog = dialog
+        }
 
-    fun setOnPenormalanClickListener(listener: OnPenormalanClickListener) {
-        this.penormalanDialog = listener
-    }
+        fun setOnIsolasiClickListener(listener: OnIsolasiClickListener) {
+            this.isolasiDialog = listener
+        }
 
-    interface OnIsolasiClickListener {
-        fun onIsolasiClick(position: Int, note: ElotoModel)
-    }
+        fun setOnPenormalanClickListener(listener: OnPenormalanClickListener) {
+            this.penormalanDialog = listener
+        }
 
-    interface OnPenormalanClickListener {
-        fun onPenormalanClick(position: Int, note: ElotoModel)
-    }
+        interface OnIsolasiClickListener {
+            fun onIsolasiClick(position: Int, note: ElotoModel)
+        }
+
+        interface OnPenormalanClickListener {
+            fun onPenormalanClick(position: Int, note: ElotoModel)
+        }
+
+        interface Dialog {
+            fun onClick(position: Int, note : ElotoModel)
+        }
 
         override fun getItemCount(): Int {
             return notesList.size
@@ -94,6 +101,12 @@ class DetailElotoAdapter(
             }
             holder.btn_penormalan.setOnClickListener {
                 penormalanDialog!!.onPenormalanClick(position, note)
+            }
+
+            holder.itemView.setOnClickListener {
+                if (dialog!=null){
+                    dialog!!.onClick(position,note)
+                }
             }
 
         }

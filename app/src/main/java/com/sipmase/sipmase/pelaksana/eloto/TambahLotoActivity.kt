@@ -15,6 +15,7 @@ import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.time.LocalDate
 
 class TambahLotoActivity : AppCompatActivity(), AnkoLogger {
     lateinit var binding: ActivityTambahLotoBinding
@@ -28,6 +29,8 @@ class TambahLotoActivity : AppCompatActivity(), AnkoLogger {
         binding.lifecycleOwner = this
 
         progressDialog = ProgressDialog(this)
+        val currentDate = LocalDate.now()
+        binding.edtTgl.text = currentDate.toString()
         binding.btnSimpan.setOnClickListener {
             simpanData()
         }

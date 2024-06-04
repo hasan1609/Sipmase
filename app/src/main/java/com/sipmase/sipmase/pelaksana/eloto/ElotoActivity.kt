@@ -32,9 +32,9 @@ class ElotoActivity : AppCompatActivity(), AnkoLogger {
         binding.lifecycleOwner = this
 
         progressDialog = ProgressDialog(this)
-        binding.btnTambahEloto.setOnClickListener {
-            startActivity<TambahLotoActivity>()
-        }
+//        binding.btnTambahEloto.setOnClickListener {
+//            startActivity<TambahLotoActivity>()
+//        }
 
     }
 

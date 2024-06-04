@@ -92,6 +92,16 @@ class DetailElotoActivity : AppCompatActivity(), AnkoLogger {
                                             startActivity<TambahIsolasiActivity>("isolasi" to noteJson)
                                         }
                                     })
+                                    mAdapter.setDialog(object : DetailElotoAdapter.Dialog{
+                                        override fun onClick(
+                                            position: Int,
+                                            note: ElotoModel
+                                        ) {
+                                            val gson = Gson()
+                                            val noteJson = gson.toJson(note)
+                                            startActivity<DetailItemElotoActivity>("eloto" to noteJson)
+                                        }
+                                    })
                                     mAdapter.notifyDataSetChanged()
                                 }
                             } else {

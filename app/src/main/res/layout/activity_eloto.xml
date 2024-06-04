@@ -9,7 +9,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".pelaksana.eloto.ElotoActivity">
+        tools:context=".pelaksana.eloto.ElotoActivity"
+        tools:ignore="MissingClass">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,18 +49,72 @@
                 android:visibility="gone" />
 
         </LinearLayout>
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/btn_tambah_eloto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
+        <com.nambimobile.widgets.efab.ExpandableFabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginStart="17dp"
             android:layout_marginTop="17dp"
             android:layout_marginEnd="18dp"
             android:layout_marginBottom="17dp"
-            android:background="@color/primary_60"
             android:src="@drawable/ic_plus_ui"
-            app:backgroundTint="@color/primary_60" />
+            app:backgroundTint="@color/primary_60"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+                    <!-- The next 3 Views will only display in portrait orientation -->
+            <com.nambimobile.widgets.efab.Overlay
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:overlay_orientation="portrait"/>
+            <com.nambimobile.widgets.efab.ExpandableFab
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                app:efab_orientation="portrait"/>
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_orientation="portrait"
+                app:label_text="Portrait Option 1"
+                android:onClick="onClickPortraitOption1"/>
+
+            <!-- The next 3 Views will only display in landscape orientation -->
+            <com.nambimobile.widgets.efab.Overlay
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:overlay_orientation="landscape"/>
+            <com.nambimobile.widgets.efab.ExpandableFab
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                app:efab_orientation="landscape"/>
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_orientation="landscape"
+                app:label_text="Landscape Option 1"
+                android:onClick="onClickLandscapeOption1"/>
+
+        </com.nambimobile.widgets.efab.ExpandableFabLayout>
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/btn_tambah_eloto"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="17dp"-->
+<!--            android:layout_marginTop="17dp"-->
+<!--            android:layout_marginEnd="18dp"-->
+<!--            android:layout_marginBottom="17dp"-->
+<!--            android:background="@color/primary_60"-->
+<!--            android:src="@drawable/ic_plus_ui"-->
+<!--            app:backgroundTint="@color/primary_60" />-->
     </RelativeLayout>
 </layout>

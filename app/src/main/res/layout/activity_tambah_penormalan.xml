@@ -121,7 +121,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_weight="1"
                     android:textColor="@color/bw_100"
-                    android:id="@+id/btn_k3"
+                    android:id="@+id/btn_simpan"
                     android:paddingVertical="16dp"
                     app:backgroundTint="@color/primary_71"
                     app:cornerRadius="50dp"
