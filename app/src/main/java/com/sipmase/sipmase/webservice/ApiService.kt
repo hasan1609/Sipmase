@@ -1469,5 +1469,12 @@ interface ApiService {
         @Part("posisi_isolasi") posisi_isolasi: RequestBody,
         @Part eviden: MultipartBody.Part?
     ): Call<PostDataResponse>
+
+    @FormUrlEncoded
+    @POST("eloto_pdf")
+    fun eloto_pdf(
+        @Field("tw") tw: String,
+        @Field("tahun") tahun: String
+    ): Call<PostDataResponse>
 }
 

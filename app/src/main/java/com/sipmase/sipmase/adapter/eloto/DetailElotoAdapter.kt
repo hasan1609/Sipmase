@@ -5,11 +5,13 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.sipmase.sipmase.R
 import com.sipmase.sipmase.model.eloto.ElotoModel
+import java.util.*
 
 
 class DetailElotoAdapter(
@@ -110,4 +112,42 @@ class DetailElotoAdapter(
             }
 
         }
+    val initialDataList = mutableListOf<ElotoModel>().apply {
+        notesList.let { addAll(it) }
+    }
+
+    fun getFilter(): Filter {
+        return dataFilter
+    }
+
+    private val dataFilter = object : Filter() {
+        override fun performFiltering(constraint: CharSequence?): FilterResults {
+            val filteredList: MutableList<ElotoModel> = mutableListOf()
+            if (constraint == null || constraint.isEmpty()) {
+                initialDataList.let { filteredList.addAll(it) }
+            } else {
+                val query = constraint.toString().trim().toLowerCase()
+                initialDataList.forEach {
+                    if (it.wo!!.toLowerCase(Locale.ROOT).contains(query)) {
+                        filteredList.add(it)
+                    }else if (it.idTag!!.toString().contains(query)) {
+                        filteredList.add(it)
+                    }else if (it.peralatan!!.toLowerCase(Locale.ROOT).contains(query)) {
+                        filteredList.add(it)
+                    }
+                }
+            }
+            val results = FilterResults()
+            results.values = filteredList
+            return results
+        }
+
+        override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+            if (results?.values is MutableList<*>) {
+                notesList.clear()
+                notesList.addAll(results.values as MutableList<ElotoModel>)
+                notifyDataSetChanged()
+            }
+        }
+    }
 }

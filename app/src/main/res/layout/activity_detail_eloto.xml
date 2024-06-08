@@ -37,6 +37,18 @@
                 android:textSize="17sp"
                 android:gravity="center" />
 
+            <SearchView
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_edttext"
+                android:padding="4dp"
+                android:queryHint="Cari Data"
+                android:textColorHint="@color/bw_70"
+                android:searchIcon="@drawable/ic_search"
+                android:showDividers="none" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_eloto"
                 android:layout_width="match_parent"
@@ -57,7 +69,7 @@
                 android:visibility="gone"/>
         </LinearLayout>
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/btn_tambah_eloto"
+            android:id="@+id/btn_export_eloto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

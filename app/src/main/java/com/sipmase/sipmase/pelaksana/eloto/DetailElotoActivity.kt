@@ -1,20 +1,26 @@
 package com.sipmase.sipmase.pelaksana.eloto
 
 import android.app.ProgressDialog
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.SearchView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.sipmase.sipmase.R
 import com.sipmase.sipmase.adapter.eloto.DetailElotoAdapter
 import com.sipmase.sipmase.databinding.ActivityDetailElotoBinding
+import com.sipmase.sipmase.model.PostDataResponse
 import com.sipmase.sipmase.model.eloto.*
 import com.sipmase.sipmase.webservice.ApiClient
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.support.v4.toast
 import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
@@ -38,10 +44,67 @@ class DetailElotoActivity : AppCompatActivity(), AnkoLogger {
                 GroupedDataEloto::class.java
             )
         binding.txtTahun.text = dataEloto!!.data.toString()
-
         progressDialog = ProgressDialog(this)
+        binding.searchBar.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                mAdapter.getFilter().filter(query)
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                mAdapter.getFilter().filter(newText)
+                return true
+            }
+        })
+        binding.btnExportEloto.setOnClickListener {
+            exportPdf(dataEloto!!.tw.toString(), dataEloto!!.tahun.toString())
+        }
 
 
+    }
+
+    private fun exportPdf(tw: String, tahun: String) {
+        api.eloto_pdf(tw, tahun).enqueue(object :
+            Callback<PostDataResponse> {
+            override fun onResponse(
+                call: Call<PostDataResponse>,
+                response: Response<PostDataResponse>
+            ) {
+                try {
+                    if (response.isSuccessful){
+                        loading(false)
+                        if(response.body()!!.sukses == 1) {
+                            val browserIntent = Intent(
+                                Intent.ACTION_VIEW,
+                                Uri.parse(response.body()!!.data.toString())
+                            )
+                            startActivity(browserIntent)
+                        }else{
+                            toast("Tidak ada data yang selesai")
+                        }
+                    }else{
+                        val gson = Gson()
+                        val type = object : TypeToken<PostDataResponse>() {}.type
+                        val errorResponse: PostDataResponse? = gson.fromJson(response.errorBody()!!.charStream(), type)
+                        info { "dinda ${errorResponse}" }
+                        loading(false)
+                        toast("kesalahan response")
+                    }
+
+                }catch (e :Exception){
+                    loading(false)
+                    info { "dinda e ${e.message}" }
+                    toast("Kesalahan Server")
+                }
+            }
+
+            override fun onFailure(call: Call<PostDataResponse>, t: Throwable) {
+                info { "dinda failure ${t.message}" }
+                loading(false)
+                toast(t.message.toString())
+            }
+
+        })
     }
 
     override fun onStart() {
