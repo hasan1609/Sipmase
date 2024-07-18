@@ -1454,8 +1454,27 @@ interface ApiService {
     ): Call<PostDataResponse>
 
     @FormUrlEncoded
+    @POST("eloto/{id}")
+    fun updateeloto(
+        @Field("id_tag") id_tag: String,
+        @Field("wo") wo: String,
+        @Field("peralatan") peralatan: String,
+        @Field("lokasi") lokasi: String,
+        @Field("posisi_awal") posisi_awal: String,
+        @Field("ket") ket: String
+    ): Call<PostDataResponse>
+
+    @FormUrlEncoded
     @POST("penormalan")
     fun tambahpenormalan(
+        @Field("tag_id") tag_id: String,
+        @Field("pic") pic: String,
+        @Field("posisi_normal") posisi_normal: String,
+    ): Call<PostDataResponse>
+
+    @FormUrlEncoded
+    @POST("penormalan/{id}")
+    fun updatepenormalan(
         @Field("tag_id") tag_id: String,
         @Field("pic") pic: String,
         @Field("posisi_normal") posisi_normal: String,
@@ -1468,6 +1487,23 @@ interface ApiService {
         @Part("pic") pic: RequestBody,
         @Part("posisi_isolasi") posisi_isolasi: RequestBody,
         @Part eviden: MultipartBody.Part?
+    ): Call<PostDataResponse>
+
+    @Multipart
+    @POST("isolasi/{id}")
+    fun updateisolasiWithFoto(
+        @Part("tag_id") tag_id: RequestBody,
+        @Part("pic") pic: RequestBody,
+        @Part("posisi_isolasi") posisi_isolasi: RequestBody,
+        @Part eviden: MultipartBody.Part?
+    ): Call<PostDataResponse>
+
+    @FormUrlEncoded
+    @POST("isolasi/{id}")
+    fun updateisolasi(
+        @Field("tag_id") tag_id: String,
+        @Field("pic") pic: String,
+        @Field("posisi_isolasi") posisi_isolasi: String
     ): Call<PostDataResponse>
 
     @FormUrlEncoded

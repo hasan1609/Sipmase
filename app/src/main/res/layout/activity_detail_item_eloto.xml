@@ -17,13 +17,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/backButton"
-                android:layout_marginStart="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/back" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -98,7 +91,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -108,23 +102,27 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_wo"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
-                                android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_wo" />
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/primary_31"
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -134,23 +132,27 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_peralatan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_peralatan" />
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -160,23 +162,26 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_lokasi"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_lokasi" />
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -186,22 +191,25 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_posisi"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_posisi" />
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -211,16 +219,18 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_ket"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_ket" />
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
 
                         </LinearLayout>
 
@@ -252,7 +262,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -261,24 +272,26 @@
                                 android:textSize="16dp"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
-                                android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+                                android:padding="8dp"/>
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_pic_penormalan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
-                                android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_pic_penormalan" />
-
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/primary_31"
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -288,16 +301,18 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_posisi_penormalan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
-                                android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_posisi_penormalan" />
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/primary_31"
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
 
                         </LinearLayout>
 
@@ -329,7 +344,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -339,23 +355,26 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_pic_isolasi"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_pic_isolasi" />
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
                             <TextView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
@@ -365,33 +384,85 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="8dp" />
-                            <TextView
-                                android:layout_weight="1"
+                            <EditText
+                                android:inputType="textPersonName"
+                                android:id="@+id/txt_posisi_isolasi"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="98092193"
-                                android:textSize="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edt_text_border"
+                                android:paddingStart="10dp"
                                 android:textColor="@color/black"
-                                android:textStyle="bold"
-                                android:padding="8dp"
-                                android:id="@+id/txt_posisi_isolasi" />
+                                android:textSize="15sp"
+                                android:gravity="start|center"
+                                android:textStyle="italic|bold"/>
 
                         </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/eviden"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_marginEnd="25dp"
-                            android:layout_gravity="center"
-                            android:layout_marginVertical="15dp"
-                            android:background="@drawable/border_foto"
-                            android:src="@drawable/no_image" />
+                        <RelativeLayout
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="40dp">
+
+                            <ImageView
+                                android:id="@+id/foto"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginBottom="25dp"
+                                android:background="@drawable/border_foto"
+                                android:src="@drawable/no_image" />
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/add_foto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:backgroundTint="@color/primary_82"
+                                android:padding="0dp"
+                                android:src="@drawable/ic_plus"
+                                app:tint="@color/black" />
+                        </RelativeLayout>
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/bw_100"
+                        app:cornerRadius="10dp"
+                        android:text="Batal"
+                        android:id="@+id/btn_batal"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:backgroundTint="@android:color/holo_orange_light"
+                        app:cornerRadius="10dp"
+                        android:text="Simpan"
+                        android:id="@+id/btn_simpan"
+                        android:layout_marginStart="10dp"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
+
     </LinearLayout>
 
 </layout>
