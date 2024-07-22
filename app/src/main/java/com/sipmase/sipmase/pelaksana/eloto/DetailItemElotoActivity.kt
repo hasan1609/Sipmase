@@ -72,8 +72,9 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
         binding.txtPeralatan.setText(eloto!!.peralatan.toString())
         binding.txtLokasi.setText(eloto!!.lokasi.toString())
         binding.txtPosisi.setText(eloto!!.posisiAwal.toString())
-        binding.txtKet.setText(eloto!!.ket.toString())
-
+        if (eloto!!.ket != null){
+            binding.txtKet.setText(eloto!!.ket.toString())
+        }
         if (eloto!!.isolasi == null){
             binding.crdIsolasi.visibility = View.GONE
         }else{
@@ -124,7 +125,7 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
             builder.show()
         }
         binding.btnSimpan.setOnClickListener {
-            simpanLoto(eloto!!.isolasi!!.tagId !!.toInt(), eloto!!.penormalan!!.idPenormalan!!.toInt())
+            simpanLoto()
         }
     }
 
@@ -158,7 +159,7 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
         })
     }
 
-    private fun simpanLoto(idIsolasi : Int, idPenormalan: Int) {
+    private fun simpanLoto() {
         val tag = binding.txtTag.text.toString()
         val wo = binding.txtWo.text.toString()
         val peralatan = binding.txtPeralatan.text.toString()
@@ -176,16 +177,17 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
                 ) {
                     try {
                         if (response.body()!!.sukses == 1) {
-                            if (idPenormalan == null){
+                            if (eloto!!.penormalan != null){
                                 simpanPenormalan(tag)
                             }
-//                            if (idIsolasi == null) {
-//                                selectedImageFile?.let { file ->
-//                                    simpanIsolasiWithfoto(file, tag)
-//                                } ?: uploadIsolasi(tag)
-//                            }
+                            if (eloto!!.isolasi != null) {
+                                selectedImageFile?.let { file ->
+                                    simpanIsolasiWithfoto(file, tag)
+                                } ?: uploadIsolasi(tag)
+                            }
                             loading(false)
                             toast("Update loto berhasil")
+                            eloto = null
                             finish()
                         } else {
                             loading(false)

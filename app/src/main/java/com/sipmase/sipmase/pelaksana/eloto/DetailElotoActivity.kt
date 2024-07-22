@@ -169,6 +169,7 @@ class DetailElotoActivity : AppCompatActivity(), AnkoLogger {
                                 }
                             } else {
                                 binding.tvkosong.visibility = View.VISIBLE
+                                finish()
                             }
                         } else {
                             loading(false)
