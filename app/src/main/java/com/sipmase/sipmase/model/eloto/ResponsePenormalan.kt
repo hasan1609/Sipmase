@@ -28,8 +28,8 @@ data class PenormalanModel(
 	@field:SerializedName("pic")
 	val pic: String? = null,
 
-	@field:SerializedName("id_tag")
-	val idTag: String? = null,
+	@field:SerializedName("tag_id")
+	val tagId: String? = null,
 
 	@field:SerializedName("posisi_normal")
 	val posisiNormal: String? = null

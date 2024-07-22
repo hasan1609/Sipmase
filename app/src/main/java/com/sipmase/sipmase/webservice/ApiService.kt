@@ -1454,7 +1454,7 @@ interface ApiService {
     ): Call<PostDataResponse>
 
     @FormUrlEncoded
-    @POST("eloto/{id}")
+    @POST("update_eloto")
     fun updateeloto(
         @Field("id_tag") id_tag: String,
         @Field("wo") wo: String,
@@ -1473,7 +1473,7 @@ interface ApiService {
     ): Call<PostDataResponse>
 
     @FormUrlEncoded
-    @POST("penormalan/{id}")
+    @POST("update_penormalan")
     fun updatepenormalan(
         @Field("tag_id") tag_id: String,
         @Field("pic") pic: String,
@@ -1490,7 +1490,7 @@ interface ApiService {
     ): Call<PostDataResponse>
 
     @Multipart
-    @POST("isolasi/{id}")
+    @POST("update_isolasi")
     fun updateisolasiWithFoto(
         @Part("tag_id") tag_id: RequestBody,
         @Part("pic") pic: RequestBody,
@@ -1499,11 +1499,17 @@ interface ApiService {
     ): Call<PostDataResponse>
 
     @FormUrlEncoded
-    @POST("isolasi/{id}")
+    @POST("update_isolasi")
     fun updateisolasi(
         @Field("tag_id") tag_id: String,
         @Field("pic") pic: String,
         @Field("posisi_isolasi") posisi_isolasi: String
+    ): Call<PostDataResponse>
+
+    @FormUrlEncoded
+    @POST("hapuseloto")
+    fun hapuseloto(
+        @Field("id") id: String
     ): Call<PostDataResponse>
 
     @FormUrlEncoded

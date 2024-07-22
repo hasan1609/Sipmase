@@ -31,8 +31,8 @@ data class IsolasiModel(
 	@field:SerializedName("pic")
 	val pic: String? = null,
 
-	@field:SerializedName("id_tag")
-	val idTag: String? = null,
+	@field:SerializedName("tag_id")
+	val tagId: String? = null,
 
 	@field:SerializedName("eviden")
 	val eviden: String? = null

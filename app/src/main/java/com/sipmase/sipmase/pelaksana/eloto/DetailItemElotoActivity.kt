@@ -12,6 +12,7 @@ import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
@@ -20,6 +21,7 @@ import com.sipmase.sipmase.R
 import com.sipmase.sipmase.databinding.ActivityDetailItemElotoBinding
 import com.sipmase.sipmase.model.PostDataResponse
 import com.sipmase.sipmase.model.eloto.ElotoModel
+import com.sipmase.sipmase.pelaksana.ambulance.CekAmbulanceActivity
 import com.sipmase.sipmase.webservice.ApiClient
 import com.squareup.picasso.Picasso
 import okhttp3.MediaType
@@ -27,12 +29,15 @@ import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
 import java.io.FileOutputStream
+import java.text.SimpleDateFormat
+import java.util.*
 
 class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFilePickerFragment.FilePickerListener {
     lateinit var binding: ActivityDetailItemElotoBinding
@@ -56,7 +61,12 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
             )
         progressDialog = ProgressDialog(this)
 
-        binding.txtTgl.text = eloto!!.createdAt.toString()
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'")
+        dateFormat.timeZone = TimeZone.getTimeZone("UTC")
+
+        val date = dateFormat.parse(eloto!!.createdAt.toString())
+        val formattedDate = SimpleDateFormat("dd MMM yyyy, HH:mm:ss").format(date!!)
+        binding.txtTgl.text =  formattedDate
         binding.txtTag.text = eloto!!.idTag.toString()
         binding.txtWo.setText(eloto!!.wo.toString())
         binding.txtPeralatan.setText(eloto!!.peralatan.toString())
@@ -68,7 +78,9 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
             binding.crdIsolasi.visibility = View.GONE
         }else{
             binding.crdIsolasi.visibility = View.VISIBLE
-            binding.txtTglIsolasi.text = eloto!!.isolasi!!.createdAt.toString()
+            val dateisolasi = dateFormat.parse(eloto!!.isolasi!!.createdAt.toString())
+            val formattedDatelisolasi = SimpleDateFormat("dd MMM yyyy, HH:mm:ss").format(dateisolasi!!)
+            binding.txtTglIsolasi.text = formattedDatelisolasi
             binding.txtPicIsolasi.setText(eloto!!.isolasi!!.pic.toString())
             binding.txtPosisiIsolasi.setText(eloto!!.isolasi!!.posisiIsolasi.toString())
             val url = "https://sipmase.com/public/storage/eviden/"
@@ -82,7 +94,9 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
             binding.crdPenormalan.visibility = View.GONE
         }else{
             binding.crdIsolasi.visibility = View.VISIBLE
-            binding.txtTglPenormalan.text = eloto!!.penormalan!!.createdAt.toString()
+            val datepenormalan = dateFormat.parse(eloto!!.penormalan!!.createdAt.toString())
+            val formattedDatelisolasi = SimpleDateFormat("dd MMM yyyy, HH:mm:ss").format(datepenormalan!!)
+            binding.txtTglPenormalan.text = formattedDatelisolasi
             binding.txtPicPenormalan.setText(eloto!!.penormalan!!.pic.toString())
             binding.txtPosisiPenormalan.setText(eloto!!.penormalan!!.posisiNormal.toString())
         }
@@ -91,15 +105,60 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
             openImagePicker()
         }
 
-        binding.btnBatal.setOnClickListener {
+        binding.btnBack.setOnClickListener {
             finish()
         }
+        binding.btnHapus.setOnClickListener {
+            val builder =
+                AlertDialog.Builder(this)
+            builder.setMessage("Hapus Loto ? ")
+            builder.setPositiveButton("Ya") { dialog, which ->
+                hapusEloto(binding.txtTag.text.toString())
+            }
+
+
+            builder.setNegativeButton("Tidak") { dialog, which ->
+
+            }
+
+            builder.show()
+        }
         binding.btnSimpan.setOnClickListener {
-            simpanLoto()
+            simpanLoto(eloto!!.isolasi!!.tagId !!.toInt(), eloto!!.penormalan!!.idPenormalan!!.toInt())
         }
     }
 
-    private fun simpanLoto() {
+    private fun hapusEloto(tagId: String) {
+        loading(true)
+        api.hapuseloto(tagId).enqueue(object :
+            Callback<PostDataResponse> {
+            override fun onResponse(
+                call: Call<PostDataResponse>,
+                response: Response<PostDataResponse>
+            ) {
+                try {
+                    if (response.body()!!.sukses == 1) {
+                        loading(false)
+                        toast("Hapus loto berhasil")
+                        finish()
+                    } else {
+                        loading(false)
+                        toast("Hapus loto gagal")
+                    }
+                } catch (e: Exception) {
+                    loading(false)
+                    info { "dinda ${e.message}${response.code()} " }
+                    toast(e.message.toString())
+                }
+            }
+            override fun onFailure(call: Call<PostDataResponse>, t: Throwable) {
+                loading(false)
+                toast("Kesalahan Jaringan")
+            }
+        })
+    }
+
+    private fun simpanLoto(idIsolasi : Int, idPenormalan: Int) {
         val tag = binding.txtTag.text.toString()
         val wo = binding.txtWo.text.toString()
         val peralatan = binding.txtPeralatan.text.toString()
@@ -107,7 +166,7 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
         val posisi = binding.txtPosisi.text.toString()
         val ket = binding.txtKet.text.toString()
 
-        if (tag != null && wo.isNotEmpty() && peralatan.isNotEmpty() && lokasi.isNotEmpty() && posisi.isNotEmpty()){
+        if (tag.isNotEmpty() && wo.isNotEmpty() && peralatan.isNotEmpty() && lokasi.isNotEmpty() && posisi.isNotEmpty()){
             loading(true)
             api.updateeloto(tag, wo, peralatan, lokasi, posisi, ket).enqueue(object :
                 Callback<PostDataResponse> {
@@ -117,14 +176,14 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
                 ) {
                     try {
                         if (response.body()!!.sukses == 1) {
-                            if (eloto!!.isolasi == null){
+                            if (idPenormalan == null){
                                 simpanPenormalan(tag)
                             }
-                            if (eloto!!.penormalan == null) {
-                                selectedImageFile?.let { file ->
-                                    simpanIsolasiWithfoto(file, tag)
-                                } ?: uploadIsolasi(tag)
-                            }
+//                            if (idIsolasi == null) {
+//                                selectedImageFile?.let { file ->
+//                                    simpanIsolasiWithfoto(file, tag)
+//                                } ?: uploadIsolasi(tag)
+//                            }
                             loading(false)
                             toast("Update loto berhasil")
                             finish()
@@ -144,6 +203,7 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
                 }
             })
         }else{
+            loading(false)
             toast("Harap Isi Semua Kolom")
         }
     }
@@ -166,7 +226,7 @@ class DetailItemElotoActivity : AppCompatActivity(), AnkoLogger, BottomSheetFile
                         }
                     } catch (e: Exception) {
                         info { "dinda ${e.message}${response.code()} " }
-                        toast(e.message.toString())
+                        toast("oooo"+e.message.toString())
                     }
                 }
                 override fun onFailure(call: Call<PostDataResponse>, t: Throwable) {
